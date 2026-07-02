@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    String  username = "Admin@gmail.com";
+	    String password ="Admin@123"; 
+	    Scanner sc = new Scanner(System.in);
+	    System.out.println("Enter username:");
+	    String User_name = sc.nextLine();
+	    System.out.println("Enter password:");
+	    String pass = sc.nextLine();
+	    if(username.equals(User_name)&& password.equals(pass)){
+	        System.out.println("Welcome to homepage ");
+	    }
+	    else if ( !username.equals(User_name)&& password.equals(pass)){
+	        System.out.println("Username is Incorrect");
+	    }
+	    else if (username.equals(User_name)&& !password.equals(pass)){
+	        System.out.println("password is Incorrect");
+	    }
+	    else if (!username.equals(User_name)&& !password.equals(pass)){
+	        System.out.println("Both are Incorrect");
+	    }
+	    
+	    else{
+	        System.out.println("Wrong password");
+	    }
+	
+	}
+}
